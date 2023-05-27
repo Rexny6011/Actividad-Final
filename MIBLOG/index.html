@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog del Sistema Solar</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* Estilos adicionales para resaltar los enlaces activos */
+        nav ul li a.active {
+            font-weight: bold;
+            color: #FFA500;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        // Script para resaltar el enlace activo al hacer clic
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('nav ul li a');
+            links.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // Evitar el comportamiento de desplazamiento predeterminado
+                    const targetId = this.getAttribute('href').substring(1); // Obtener el id de la sección objetivo
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        // Remover la clase "active" de todos los enlaces
+                        links.forEach(link => link.classList.remove('active'));
+                        // Agregar la clase "active" al enlace clicado
+                        this.classList.add('active');
+                        // Desplazarse suavemente a la sección objetivo
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Blog del Sistema Solar</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#El Sol">El Sol</a></li>
+            <li><a href="#Mercurio">Mercurio</a></li>
+            <li><a href="#Venus">Venus</a></li>
+            <li><a href="#Tierra">Tierra</a></li>
+            <li><a href="#La-Luna">La Luna</a></li>
+            <li><a href="#Marte">Marte</a></li>
+            <li><a href="#Jupiter">Júpiter</a></li>
+            <li><a href="#Saturno">Saturno</a></li>
+            <li><a href="#Urano">Urano</a></li>
+            <li><a href="#Neptuno">Neptuno</a></li>
+            <li><a href="#Pluton">Plutón</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="Inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenidos a este BLOG, soy Armando y en este espacio les compartiré un poco de mis conocimientos sobre nuestro Sistema Solar.<p>
+        </section>
+        <section id="El Sol">
+            <h2>El Sol</h2>
+            <img src="C:\Users\Armando\OneDrive\Documentos\HTML Practica\Imagenes\El Sol.jpg" alt="El Sol">
+            <p>El sol es una estrella de gran tamaño en el centro de nuestro sistema solar, compuesta principalmente de hidrógeno y helio. Con un diámetro de aproximadamente 1.4 millones de kilómetros, emite luz y calor que son fundamentales para la vida en la Tierra. Su actividad, como las manchas solares y las erupciones solares, puede afectar nuestro planeta. A través de la energía solar, se aprovecha su poder para generar electricidad y calentar agua. El sol tiene diferentes capas, como el núcleo, la fotosfera, la cromosfera y la corona. Además, sigue un ciclo de 11 años y su influencia en el clima es significativa.</p>
+        </section>
+        <section id="Mercurio">
+            <h2>Mercurio</h2>
+            <img src="C:\Users\Armando\OneDrive\Documentos\HTML Practica\Imagenes\Mercurio.jpg" alt="Mercurio">
+            <p>Mercurio, el planeta más cercano al sol, es un mundo rocoso y pequeño con una atmósfera muy delgada. Con un diámetro de aproximadamente 4,880 kilómetros, es apenas un poco más grande que la luna de la Tierra. Mercurio tiene una superficie marcada por numerosos cráteres de impacto, así como por llanuras suaves llamadas "marías". Debido a su proximidad al sol, experimenta extremas variaciones de temperatura, con días extremadamente calurosos y noches extremadamente frías. Mercurio no tiene lunas ni anillos y su órbita es la más excéntrica de todos los planetas del sistema solar. A pesar de su tamaño reducido, Mercurio presenta una sorprendente actividad geológica, incluyendo acantilados escarpados conocidos como "riscos". La exploración espacial ha revelado fascinantes detalles sobre este planeta, aunque aún hay mucho por descubrir sobre su formación y características únicas.</p>
+        </section>
+        <section id="Venus">
+            <h2>Venus</h2>
+            <img src="C:\Users\Armando\OneDrive\Documentos\HTML Practica\Imagenes\Venus.jpg" alt="Venus">
+            <p>Venus es el segundo planeta más cercano al sol y es conocido como el "Planeta Gemelo" de la Tierra debido a su tamaño similar. Sin embargo, Venus tiene una atmósfera densa compuesta principalmente de dióxido de carbono, lo que crea un efecto invernadero desbordante y una temperatura promedio extremadamente alta. Su superficie está cubierta por densas nubes de ácido sulfúrico y presenta numerosos volcanes y llanuras. Venus también es el planeta más brillante en nuestro cielo nocturno después de la Luna y el sol.</p>
+        </section>
+        <section id="Tierra">
+            <h2>Tierra</h2>
+            <img src="C:\Users\Armando\OneDrive\Documentos\HTML Practica\Imagenes\La Tierra.jpg" alt="Tierra">
+            <p>La Tierra es nuestro hogar y el tercer planeta más cercano al sol. Es el único planeta conocido hasta ahora en el que se encuentra vida. La Tierra tiene una atmósfera única que permite la existencia de agua líquida, una condición esencial para la vida tal como la conocemos. Nuestro planeta presenta una diversidad de ecosistemas, desde montañas hasta océanos, y está cubierto en gran parte por tierra y agua. Además de ser habitable, la Tierra también posee una rica historia geológica y una amplia variedad de fenómenos naturales, como terremotos y volcanes.</p>
+        </section>
+        <section id="La-Luna">
+            <h2>La Luna</h2>
+            <img src="C:\Users\Armando\OneDrive\Documentos\HTML Practica\Imagenes\La Luna.jpg" alt="La Luna">
+            <p>La Luna es el satélite natural de la Tierra y el objeto celeste más cercano a nosotros. Es un mundo rocoso sin atmósfera significativa y presenta una superficie cubierta de cráteres, mares y montañas. La Luna ha sido objeto de numerosas misiones espaciales y ha jugado un papel importante en la exploración espacial tripulada. Además, su influencia gravitacional afecta las mareas en la Tierra y ha sido objeto de estudio en la comprensión de la formación de nuestro sistema solar.</p>
+        </section>
+        <section id="Marte">
+            <h2>Marte</h2>
+            <img src="C:\Users\Armando\OneDrive\Documentos\HTML Practica\Imagenes\Marte.jpg" alt="Marte">
+            <p>Marte, conocido como el "Planeta Rojo", es el cuarto planeta en orden de distancia al sol. Es un mundo rocoso con una fina atmósfera compuesta principalmente de dióxido de carbono. Marte presenta características geológicas intrigantes, como el monte Olimpo, el volcán más grande del sistema solar, y el valle de Marineris, un vasto cañón. También ha capturado el interés de los científicos debido a la posible existencia de agua líquida pasada o presente.</p>
+        </section>
+        <section id="Jupiter">
+            <h2>Júpiter</h2>
+            <img src="C:\Users\Armando\OneDrive\Documentos\HTML Practica\Imagenes\Jupiter.jpg" alt="Júpiter">
+            <p>Júpiter es el quinto planeta en orden de distancia al sol y el más grande de todos. Es un gigante gaseoso compuesto principalmente de hidrógeno y helio. Su masa es tan grande que podría albergar a todos los demás planetas juntos. Júpiter es conocido por su gran mancha roja, una tormenta que ha estado activa durante siglos, y por sus numerosas lunas, incluyendo las famosas cuatro lunas galileanas: Ío, Europa, Ganimedes y Calisto.</p>
+        </section>
+        <section id="Saturno">
+            <h2>Saturno</h2>
+            <img src="C:\Users\Armando\OneDrive\Documentos\HTML Practica\Imagenes\Saturno.jpg" alt="Saturno">
+            <p>Saturno, el sexto planeta en distancia desde el sol, es conocido por sus impresionantes anillos compuestos principalmente de partículas de hielo. Este gigante gaseoso también cuenta con una densa atmósfera y una rotación rápida. Saturno posee una gran cantidad de lunas, siendo Titán la más destacada, con una atmósfera densa y rica en nitrógeno. Los anillos y lunas de Saturno han sido objeto de exploración y estudio por parte de diversas misiones espaciales.</p>
+        </section>
+        <section id="Urano">
+            <h2>Urano</h2>
+            <img src="C:\Users\Armando\OneDrive\Documentos\HTML Practica\Imagenes\Urano.jpg" alt="Urano">
+            <p>Urano es el séptimo planeta en distancia al sol y está compuesto en su mayoría por gases como hidrógeno y helio. Lo que lo hace único es su inclinación axial extrema, lo que significa que su eje de rotación está casi en un plano perpendicular a su órbita. Urano también tiene anillos y un sistema de lunas, siendo Miranda una de las más interesantes debido a su terreno accidentado y su apariencia geológicamente activa.</p>
+        </section>
+        <section id="Neptuno">
+            <h2>Neptuno</h2>
+            <img src="C:\Users\Armando\OneDrive\Documentos\HTML Practica\Imagenes\Neptuno.jpg" alt="Neptuno">
+            <p>Neptuno, el octavo y último planeta del sistema solar, es otro gigante gaseoso. Es conocido por su color azul intenso debido a la presencia de metano en su atmósfera. Neptuno tiene vientos extremadamente fuertes y una Gran Mancha Oscura similar a la Gran Mancha Roja de Júpiter. Su luna más notable es Tritón, que tiene una actividad geológica activa y es la única luna grande en el sistema solar que orbita en dirección contraria a la rotación de su planeta.</p>
+        </section>
+        <section id="Pluton">
+            <h2>Plutón</h2>
+            <img src="C:\Users\Armando\OneDrive\Documentos\HTML Practica\Imagenes\Pluton.jpg" alt="Plutón">
+            <p>Plutón solía ser considerado el noveno planeta del sistema solar, pero en 2006 fue reclasificado como un "planeta enano" debido a cambios en la definición oficial de planeta. Es el objeto más grande en la región conocida como el Cinturón de Kuiper, una zona más allá de la órbita de Neptuno que contiene otros objetos helados. Plutón tiene una atmósfera delgada compuesta principalmente de nitrógeno y metano. Su superficie está cubierta de hielo de nitrógeno, metano y monóxido de carbono, y presenta características geológicas interesantes, como montañas y llanuras de hielo. La sonda espacial New Horizons realizó un sobrevuelo histórico de Plutón en 2015, proporcionando valiosa información sobre este pequeño y distante mundo.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Blog del Sistema Solar. Armando Russell.</p>
+    </footer>
+</body>
+</html>
